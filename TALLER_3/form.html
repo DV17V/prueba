@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario escolar en css</title>
+    <!--relaciona con el archivo css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles2.css">
+    <!--scrips que relacionan o importan librerias en js-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--links que relacionan el estilo de la fuente seleccioanda-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Edu+NSW+ACT+Foundation:wght@400..700&family=Licorice&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- inicio de codigo obtenido de components en bootstrap-->
+    <nav class="navbar" style="background: linear-gradient(to right, #4E2394, #DBC9F5);">
+        <!-- Navbar content -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/colegio.png" alt="Logo" width="100" height="100" class="d-inline-block align-text-top">
+            </a>
+
+            <center>
+                <h1><strong>Colegio Ciudad de Ipiales </strong></h1>
+                <h4> <strong> "Miles de sueños en cada alumno"</strong></h4>
+            </center>
+
+            <nav class="navbar navbar-expand-lg bg-body-tertiary"
+                style="background: linear-gradient(to right, #e08775, #e96c87);">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Inicio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="sobre_nosotros.html">Sobre nosotros</a>
+                            <a class="nav-link active" aria-current="page" href="form.html">Aspirantes</a>
+                            <a class="nav-link" href="login.html">Ingresar</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </nav>
+
+    <br>
+    
+    <center>
+
+        <form action="">
+            <!--CONTENEDOR PARA LA INFORMACION GENERAL-->
+            <div id="contenedor1">
+
+
+                <!--tabla #1-->
+                <table class="table_form">
+                    <!--fila titulo-->
+                    <tr>
+                        <td colspan="4">
+                            <center>
+                                <h3 class="tittle">DATOS PERSONALES DEL ESTUDIANTE:</h3>
+                            </center>
+                        </td>
+                    </tr>
+
+                    <!--fila #1-->
+                    <tr>
+                        <!--celda #1-->
+                        <td>
+                            <!--id=asimila parte estetica name=asimila el contenido dentro del input-->
+                            <label for="nombres">
+                                <center>Nombres</center>
+                            </label>
+                            <input type="text" id="nombres" name="nombres" class="datos_est">
+                            <!--class ayuda a agrupar elementos en una clase-->
+                        </td>
+
+                        <!--celda #2-->
+                        <td>
+                            <label for="apellidos">
+                                <center>Apellidos</center>
+                            </label>
+                            <input type="text" id="apellidos" name="apellidos" class="datos_est">
+                        </td>
+
+                        <!--celda #3-->
+                        <td>
+                            <label for="edad">
+                                <center>Edad</center>
+                            </label>
+                            <input type="number" id="edad" name="edad" class="datos_est">
+                        </td>
+
+                        <!--celda #4-->
+                        <td>
+                            <label for="id_usu">
+                                <center>Documento de identidad No.</center>
+                            </label>
+                            <input type="number" id="id_usu" name="id_usu" class="datos_est">
+                        </td>
+                    </tr>
+
+                    <!--fila #2-->
+                    <tr>
+                        <!--celda #1-->
+                        <td colspan="2">
+                            <br>
+                            <label for="fecha_nac">
+                                <center>Fecha de nacimiento</center>
+                            </label>
+                            <center>
+                                <input type="date" id="fecha_nac" name="fecha_nac" class="datos_est">
+                            </center>
+                        </td>
+
+                        <!--celda #2-->
+                        <td colspan="2">
+                            <br>
+                            <!-- input de tipo radio, metodo de seleccion-->
+                            <label>
+                                <center>Genero:</center>
+                            </label>
+                            <center>
+                                <label for="fem_txt">Femenino </label>
+                                <input type="radio" id="fem_txt" name="genero_txt" value="F">
+                                <label for="mas_txt">Masulino </label>
+                                <input type="radio" id="mas_txt" name="genero_txt" value="M">
+                            </center>
+                        </td>
+                    </tr>
+
+                    <!--fila #3-->
+                    <tr>
+                        <!--celda #1-->
+                        <td colspan="2">
+                            <br>
+                            <label for="edad">
+                                <center>Dirección</center>
+                            </label>
+                            <center>
+                                <!--style="WIDTH: 350px" propiedad que aumenta el largo del imput-->
+                                <input type="number" id="edad" name="edad" class="datos_est" style="WIDTH: 350px">
+                            </center>
+                        </td>
+
+                        <!--celda #2-->
+                        <td>
+                            <br>
+                            <label for="email_txt">
+                                <center>Correo electrónico</center>
+                            </label>
+                            <input type="email" id="email_txt" name="email_txt" class="datos_est">
+                        </td>
+
+                        <!--celda #3-->
+                        <td>
+                            <br>
+                            <label for="tel_txt">
+                                <center>Teléfono</center>
+                            </label>
+                            <center>
+                                <input type="tel" id="tel__txt" name="tel_txt" class="datos_est" style="WIDTH: 100px">
+                            </center>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <br>
+            <br>
+
+            <!--CONTENEDOR PARA LA INFORMACION DE LOS PADRES-->
+            <div id="contenedor2">
+                <!--tabla #2-->
+                <table class="table_form">
+                    <!--fila titulo-->
+                    <tr>
+                        <!--celda #0-->
+                        <td colspan="4">
+                            <center>
+                                <h3 class="tittle">DATOS DE CONTACTO DE LOS PADRES/TUTORES:</h3>
+                            </center>
+                        </td>
+                    </tr>
+
+                    <!--fila #1-->
+                    <tr>
+                        <!--celda #1-->
+                        <td colspan="2">
+                            <label for="nombres_padre">
+                                <center>Nombres completos del padre</center>
+                            </label>
+                            <input type="text" id="nombres_padre" name="nombres_padre" class="datos_padres"
+                                style="WIDTH: 350px">
+                        </td>
+
+                        <!--celda #2-->
+                        <td>
+                            <label for="tel_padre">
+                                <center>Teléfono</center>
+                            </label>
+                            <input type="tel" id="tel_padre" name="tel_padre" class="nombres_padre"
+                                style="WIDTH: 100px">
+                        </td>
+
+                        <!--celda #3-->
+                        <td>
+                            <label for="email_padre">
+                                <center>Correo electrónico</center>
+                            </label>
+                            <input type="email" id="email_padre" name="email_padre" class="nombres_padre"
+                                style="WIDTH: 250px">
+                        </td>
+                    </tr>
+
+                    <!--fila #2-->
+                    <tr>
+                        <!--celda #1-->
+                        <td colspan="2">
+                            <br>
+                            <label for="nombres_madre">
+                                <center>Nombres completos de la madre</center>
+                            </label>
+                            <input type="text" id="nombres_madre" name="nombres_madre" class="nombres_padre"
+                                style="WIDTH: 350px">
+                        </td>
+
+                        <!--celda #2-->
+                        <td>
+                            <br>
+                            <label for="tel_madre">
+                                <center>Teléfono</center>
+                            </label>
+                            <input type="tel" id="tel_madre" name="tel_madre" class="nombres_padre"
+                                style="WIDTH: 100px">
+                        </td>
+
+                        <!--celda #3-->
+                        <td>
+                            <br>
+                            <label for="email_madre">
+                                <center>Correo electrónico</center>
+                            </label>
+                            <input type="email" id="email_madre" name="email_madre" class="nombres_padre"
+                                style="WIDTH: 250px">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <br>
+            <br>
+
+            <!--CONTENEDOR PARA LA INFORMACION ACADEMICA-->
+            <div id="contenedor3">
+
+                <!--tabla #3-->
+                <table class="table_form">
+                    <!--fila titulo-->
+                    <tr>
+                        <td colspan="4">
+                            <center>
+                                <h3 class="tittle">REGISTRO ACADÉMICO Y EDUCATIVO:</h3>
+                            </center>
+                        </td>
+                    </tr>
+
+                    <!--fila #1-->
+                    <tr>
+                        <!--celda #1-->
+                        <td colspan="2">
+                            <label>
+                                <center>Nivel de formacion</center>
+                            </label>
+                            <center>
+                                <label for="primaria">Basica primaria</label>
+                                <input type="radio" id="primaria" name="academica" value="BP">
+                                <label for="secundaria">Basica secundaria </label>
+                                <input type="radio" id="secundaria" name="academica" value="BS">
+                            </center>
+                        </td>
+
+                        <!--celda #2-->
+                        <td>
+                            <label for="edad">
+                                <center>Grado a cursar</center>
+                            </label>
+                            <center>
+                                <input type="number" id="grado" name="grado" class="reg_aca" style="WIDTH: 100px">
+                            </center>
+                        </td>
+
+                        <!--celda #3-->
+                        <td>
+                            <label>
+                                <center>Jornada escolar:</center>
+                            </label>
+                            <center>
+                                <label for="mañana">Mañana </label>
+                                <input type="radio" id="mañana" name="jornada" value="M">
+                                <label for="tarde">Tarde </label>
+                                <input type="radio" id="tarde" name="jornada" value="T">
+                            </center>
+                        </td>
+                    </tr>
+
+                    <!--fila #2-->
+                    <tr>
+                        <!--celda #1-->
+                        <td colspan="2" rowspan="2">
+                            <br>
+                            <label for="descripcion">
+                                <center>Describa sus mejores aptitudes o habilidades</center>
+                            </label>
+                            <center>
+                                <textarea type="time" name="descripcion" id="descripcion" cols="40" rows="6"
+                                    class="reg_aca"></textarea>
+                            </center>
+                        </td>
+
+                        <!--celda #2-->
+                        <td colspan="2">
+                            <br>
+                            <label for="foto">
+                                <center>Suba su foto</center>
+                            </label>
+                            <center>
+                                <input type="file" id="foto" name="foto" class="reg_aca">
+                            </center>
+                        </td>
+                    </tr>
+
+                    <!--fila #2-->
+                    <tr>
+                        <!--celda #1-->
+                        <td colspan="2">
+                            <br>
+                            <label for="edad">
+                                <center>Institucion donde realizo (ultimos) estudios</center>
+                            </label>
+                            <center>
+                                <input type="text" id="institucion" name="institucion" class="reg_aca"
+                                    style="WIDTH: 300px">
+                            </center>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <br>
+            <br>
+
+            <!--CONTENEDOR PARA DATOS SOCIALES Y DE SALUD-->
+            <div id="contenedor4">
+
+
+                <!--tabla #4-->
+                <table class="table_form">
+                    <!--fila titulo-->
+                    <tr>
+                        <td colspan="3">
+                            <center>
+                                <h3 class="tittle">DATOS SOCIALES Y DE SALUD</h3>
+                            </center>
+                        </td>
+                    </tr>
+
+                    <!--fila #1-->
+                    <tr>
+                        <!--celda #1-->
+                        <td>
+                            <label for="hospital">
+                                <center>Nombre del hospital o clínica preferida</center>
+                            </label>
+                            <center>
+                                <input type="text" id="hospital" name="hospital" class="info_soc" style="WIDTH: 300px">
+                            </center>
+                        </td>
+
+                        <!--celda #2-->
+                        <td>
+                            <label>
+                                <center>Tipo:</center>
+                            </label>
+                            <center>
+                                <label for="sunsidiado">Subsidiado </label>
+                                <input type="radio" id="sunsidiado" name="tipo" value="S">
+                                <label for="contributivo">Contributivo </label>
+                                <input type="radio" id="contributivo" name="tipo" value="C">
+                            </center>
+                        </td>
+
+                        <!--celda #3-->
+                        <td>
+                            <label for="estrato">
+                                <center>Estrato social</center>
+                            </label>
+                            <center>
+                                <!-- Para seleccionar entre una lista de opciones -->
+                                <select name="estrato" id=" estrato" class="info_soc">
+                                    <option disabled selected>Seleccione una opcion</option>
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="D">D</option>
+                                </select>
+                            </center>
+                        </td>
+                    </tr>
+
+                    <!--fila #2-->
+                    <tr>
+                        <!--celda #1-->
+                        <td>
+                            <label>
+                                <center>¿Presenta alguna discapacidad?</center>
+                            </label>
+                            <center>
+                                <label for="si">Si </label>
+                                <input type="radio" id="si" name="discapacidad" value="S">
+                                <label for="no">No </label>
+                                <input type="radio" id="no" name="discapacidad" value="N">
+                            </center>
+                        </td>
+
+                        <!--celda #2-->
+                        <td colspan="2">
+                            <br>
+                            <label for="descripcion_med">
+                                <center>Describa datos médicos relevantes <br>
+                                    (alergias, condiciones médicas, medicamentos, etc.).</center>
+                            </label>
+                            <center>
+                                <textarea type="time" name="descripcion_med" id="descripcion_med" cols="55"
+                                    rows="4"></textarea>
+                            </center>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <br>
+            <div id="contenedor5">
+                <center>
+                    <input type="submit" value="Enviar" id="btn_enviar" name="btn_enviar">
+                </center>
+            </div>
+
+        </form>
+    </center>
+
+
+    <br><br>
+
+    <!-- pie de pagina-->
+    <footer>
+        <!-- estrucutra de divison de columna-->
+        <div class="row">
+            <!-- division de la columna1-->
+            <div class="col-4" id="footer">
+                <br>
+                <img src="img/colegio.png" alt="logo" width="100" height="100">
+            </div>
+
+            <!-- division de la columna2-->
+            <div class="col-5">
+                <p id="texto_footer1">
+                    <br>
+                    <br>
+                    Colegio Ciudad de Ipiales
+                    Acreditación de Alta calidad, <br> Resolución No. 000022 - Enero 11 de 2023
+                    Vigilada por
+                    <br>MINEDUCACIÓN
+                </p>
+            </div>
+
+            <!-- division de la columna3-->
+            <div class="col-3">
+                <div class="container">
+                    <!-- tabla para asignacion de redes-->
+                    <table>
+                        <!--fila titulo #1-->
+                        <tr>
+                            <!--celda #1-->
+                            <td colspan="4">
+                                <br>
+                                <center>
+                                    <h3 class="subtittle">
+                                        Siguenos en nuestras redes sociales
+                                    </h3>
+                                </center>
+                            </td>
+                        </tr>
+
+                        <!--fila #2-->
+                        <tr>
+                            <!--celda #1-->
+                            <td>
+                                <a class="navbar-brand" href="#">
+                                    <center>
+                                        <img src="img/rs3.png" alt="Whatsapp" width="40" height="34">
+                                        <p>Whatsapp</p>
+                                    </center>
+                                </a>
+                            </td>
+
+                            <!--celda #2-->
+                            <td>
+                                <a class="navbar-brand" href="#">
+                                    <center>
+                                        <img src="img/rs1.png" alt="Instagram" width="40" height="34">
+                                        <p>Instagram</p>
+                                    </center>
+                                </a>
+                            </td>
+
+                            <!--celda #3-->
+                            <td>
+                                <a class="navbar-brand" href="#">
+                                    <center>
+                                        <img src="img/rs2.png" alt="Facebook" width="40" height="34">
+                                        <p>Facebook</p>
+                                    </center>
+                                </a>
+                            </td>
+
+                            <!--celda #4-->
+                            <td>
+                                <a class="navbar-brand" href="#">
+                                    <center>
+                                        <img src="img/rs4.png" alt="Youtube" width="40" height="34">
+                                        <p>Youtube</p>
+                                    </center>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

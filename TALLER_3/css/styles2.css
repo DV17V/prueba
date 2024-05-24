@@ -1,0 +1,76 @@
+html {
+    min-height: 100%;
+    position:relative;
+
+}
+
+.navbar {
+    min-height: 100%;
+    position:initial;
+}
+
+h1 {
+    font-family: "Cinzel", serif;
+    color: #020C1E;
+}
+
+.subtittle {
+    font-family: "Licorice", cursive;
+    font-size: large;
+}
+
+.tittle{
+    font-family: "Cinzel", serif;
+    color:#020C1E;
+    background: linear-gradient(to right, #4E2394, #DBC9F5);
+}
+
+h4 {
+    font-family: "Licorice", cursive;
+}
+
+
+body{
+    background-image:url("img/colegio.png") ; /*agregar imagen local como fondo */ 
+    background-size: cover;
+}
+
+input{
+    border-radius: 10px 10px 10px 10px ;
+}
+
+/*aplicar diseño al boton enviar*/
+#btn_enviar{
+    width: 100px;
+    height: 50px;
+    color:black ;
+    background-color:aliceblue;
+    border-radius: 50px 50px 50px 50px ;
+}
+
+#texto_footer2 {
+    text-align: right;
+}
+
+#texto_footer1 {
+    text-align: left;
+}
+
+footer {
+    bottom: 0;
+    color: white;
+    background: linear-gradient(to right, #4E2394, #DBC9F5);
+    font-size: smaller;
+    text-align: right;
+    position:relative;
+   
+}
+
+.table_form {
+    background: linear-gradient(to right, #e08775, #e96c87);
+    opacity: .9;
+    border-radius: 10px 10px 10px 10px ;
+    font-size: medium;
+}
+
+

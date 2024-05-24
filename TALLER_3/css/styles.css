@@ -1,0 +1,60 @@
+html {
+    min-height: 100%;
+    position:relative;
+
+}
+
+.navbar {
+    min-height: 100%;
+    position:initial;
+}
+
+h1 {
+    font-family: "Cinzel", serif;
+}
+
+h4 {
+    font-family: "Licorice", cursive;
+}
+
+.subtittle {
+    font-family: "Licorice", cursive;
+    font-size: large;
+}
+
+.card-text {
+    font-family: "Edu NSW ACT Foundation", cursive;
+}
+
+.accordion {
+    align-items: center;
+}
+
+.accordion-button {
+    background: linear-gradient(to right, #e08775, #e96c87);
+    opacity: .8;
+}
+
+.accordion-body {
+    text-align: justify;
+}
+
+#texto_footer2 {
+    text-align: right;
+}
+
+#texto_footer1 {
+    text-align: left;
+}
+
+footer {
+    bottom: 0;
+    color: white;
+    background: linear-gradient(to right, #4E2394, #DBC9F5);
+    font-size: smaller;
+    text-align: right;
+    position:relative;
+   
+}
+
+
